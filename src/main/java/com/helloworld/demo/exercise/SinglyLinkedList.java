@@ -11,14 +11,13 @@ public class SinglyLinkedList {
     }
 
     public int get(int index) {
-
-       if(index < 0 || index >= size)
-           return -1;
-       ListNode curr = head;
-       for(int i = 0; i < index+1; i++) {
-           curr = curr.next;
-       }
-       return curr.val;
+        if (index < 0 || index >= size)
+            return -1;
+        ListNode curr = head;
+        for (int i = 0; i < index + 1; i++) {
+            curr = curr.next;
+        }
+        return curr.val;
     }
 
     public void addAtHead(int val) {
