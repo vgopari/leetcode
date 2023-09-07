@@ -6,7 +6,7 @@ import java.util.Set;
 public class LinkedListIntersection {
 
     public static ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-        Set<ListNode> visited = new HashSet<ListNode>();
+        Set<ListNode> visited = new HashSet<>();
 
         while (headB != null && headB.next != null) {
             visited.add(headB);
